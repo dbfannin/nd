@@ -1,0 +1,53 @@
+:host {
+  font-size: 1.4rem;
+}
+
+.profilesContainer {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.profileContainer {
+
+}
+.displayName {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contentContainer {
+  padding: .5rem 1rem;
+}
+
+.profileImage {
+  max-width: 100%;
+  width: 20rem;
+  height: auto;
+  border-radius: 20rem;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.twitch {
+
+}
+
+.mixerLogo {
+  width: 3rem;
+  height: auto;
+}
+
+.linkContainer {
+  text-align: center;
+}
+a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+
+.bio {
+  white-space: pre-line;
+}
