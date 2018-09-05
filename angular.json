@@ -45,8 +45,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "baseHref": "https://dbfannin.github.io/nd/",
-              "deployUrl": "nd/"
+              "baseHref": "https://dbfannin.github.io/nd/"
             }
           }
         },

@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {ProfileInterface} from './profile.interface';
-import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-profile',
@@ -8,9 +7,6 @@ import {environment} from '../../environments/environment';
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
-
-  assetBasePath = environment.assetBasePath ;
-
 
   profiles: ProfileInterface[] = [
     {
