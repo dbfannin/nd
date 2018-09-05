@@ -11,9 +11,9 @@ export class ProfileComponent implements OnInit {
   profiles: ProfileInterface[] = [
     {
       twitchUrl: 'https://www.twitch.tv/dangerdrake89',
-      mixerUrl: 'https://mixer.com/DangerDrake',
+      mixerUrl: 'https://mixer.com/DangerDude',
       imageUrl: 'assets/dangerdrake.png',
-      displayName: 'DangerDrake',
+      displayName: 'DangerDude',
     },
     {
       twitchUrl: 'https://www.twitch.tv/turbo_tron',

@@ -34,17 +34,24 @@
 }
 
 .mixerLogo {
-  width: 3rem;
+  width: 2rem;
   height: auto;
+}
+
+.twitchLogo {
+  font-size: 2rem;
 }
 
 .linkContainer {
   text-align: center;
-}
-a {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 .5rem;
+  a {
+    display: block;
+    vertical-align: middle;
+    margin: 0 .5rem;
+    i, img {
+      vertical-align: middle;
+    }
+  }
 }
 
 
