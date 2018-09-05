@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ProfileInterface} from './profile.interface';
+import {environment} from '../../environments/environment';
 
 @Component({
   selector: 'app-profile',
@@ -8,23 +9,26 @@ import {ProfileInterface} from './profile.interface';
 })
 export class ProfileComponent implements OnInit {
 
+  assetBasePath = environment.assetBasePath ;
+
+
   profiles: ProfileInterface[] = [
     {
       twitchUrl: 'https://www.twitch.tv/dangerdrake89',
       mixerUrl: 'https://mixer.com/DangerDrake',
-      imageUrl: '/assets/dangerdrake.png',
+      imageUrl: 'assets/dangerdrake.png',
       displayName: 'DangerDrake',
     },
     {
       twitchUrl: 'https://www.twitch.tv/turbo_tron',
       mixerUrl: 'https://mixer.com/Turbo_Tron',
-      imageUrl: '/assets/turbo_tron.png',
+      imageUrl: 'assets/turbo_tron.png',
       displayName: 'Turbo_Tron',
     },
     {
       twitchUrl: 'https://www.twitch.tv/tl_sol',
       mixerUrl: 'https://mixer.com/ND_Sol',
-      imageUrl: '/assets/sol.png',
+      imageUrl: 'assets/sol.png',
       displayName: 'Sol',
     }
   ];
