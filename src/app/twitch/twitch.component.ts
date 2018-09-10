@@ -23,8 +23,8 @@ export class TwitchComponent implements OnInit {
 
   private twitchUser: TwitchUserInterface;
 
-  protected iframeSrc: SafeResourceUrl;
-  protected stream: any;
+  iframeSrc: SafeResourceUrl;
+  stream: any;
 
   protected containerId: string;
 
