@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ProfileInterface} from './profile.interface';
+import {GamesEnum} from './games.enum';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -8,31 +10,16 @@ import {ProfileInterface} from './profile.interface';
 })
 export class ProfileComponent implements OnInit {
 
-  profiles: ProfileInterface[] = [
-    {
-      twitchUrl: 'https://www.twitch.tv/dangerdrake89',
-      mixerUrl: 'https://mixer.com/DangerDude',
-      imageUrl: 'assets/dangerdrake.png',
-      displayName: 'DangerDude',
-    },
-    {
-      twitchUrl: 'https://www.twitch.tv/turbo_tron',
-      mixerUrl: 'https://mixer.com/Turbo_Tron',
-      imageUrl: 'assets/turbo_tron.png',
-      displayName: 'Turbo_Tron',
-    },
-    {
-      twitchUrl: 'https://www.twitch.tv/tl_sol',
-      mixerUrl: 'https://mixer.com/ND_Sol',
-      imageUrl: 'assets/sol.png',
-      displayName: 'Sol',
-    }
-  ];
+  user: ProfileInterface;
 
-  constructor() {
+  constructor(private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit() {
+    this.activatedRoute.data.subscribe(data => {
+      this.user = data['profile'];
+      console.log(this.user);
+    });
   }
 
 }
