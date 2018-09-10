@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {GoogleAnalyticsService} from './google-analytics-tracking.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'normalDudes';
+  constructor(private tracking: GoogleAnalyticsService) {
+    tracking.init();
+  }
 }
