@@ -1,8 +1,6 @@
-<div class="container">
-
-  <h1>Check us out on YouTube!</h1>
+<div class="container" *ngIf="videoId">
   <iframe width="100%" height="600"
-          src="https://www.youtube.com/embed?listType=user_uploads&channel=UCBX1oiWgd2zUkA3s1_c5NrA"
+          [src]="videoId"
           frameborder="0"
           allowfullscreen></iframe>
   <br/>
