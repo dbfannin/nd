@@ -7,4 +7,5 @@ export class ProfileInterface {
   imageUrl: string;
   displayName: string;
   games: GamesEnum[];
+  profileRoute: string;
 }

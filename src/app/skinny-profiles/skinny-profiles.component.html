@@ -2,10 +2,14 @@
   <div class="row">
     <div class="col-md-4 col-sm-12" *ngFor="let profile of profiles">
       <div class="profileContainer">
-        <img [src]="profile.imageUrl" class="profileImage">
+        <a [routerLink]="profile.profileRoute" class="profileImageContainer">
+          <img [src]="profile.imageUrl" class="profileImage">
+        </a>
 
         <div class="contentContainer">
-          <h4  class="displayName">{{profile.displayName}}</h4>
+          <a [routerLink]="profile.profileRoute" class="displayName">
+            {{profile.displayName}}
+          </a>
 
           <div class="linkContainer">
             <a [href]="profile.twitchUrl" target="_blank" class="twitch">

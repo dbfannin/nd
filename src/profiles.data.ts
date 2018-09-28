@@ -7,7 +7,8 @@ export const DangerDude: ProfileInterface = {
   mixerUrl: 'https://mixer.com/DangerDude',
   imageUrl: '/assets/dangerdrake.png',
   displayName: 'DangerDude',
-  games: [GamesEnum.SevenDaysToDie, GamesEnum.Scum]
+  games: [GamesEnum.SevenDaysToDie, GamesEnum.Scum],
+  profileRoute: '/danger_dude'
 };
 
 export const TurboTron: ProfileInterface = {
@@ -16,7 +17,8 @@ export const TurboTron: ProfileInterface = {
   mixerUrl: 'https://mixer.com/Turbo_Tron',
   imageUrl: '/assets/turbo_tron.png',
   displayName: 'Turbo_Tron',
-  games: [GamesEnum.SevenDaysToDie, GamesEnum.Scum]
+  games: [GamesEnum.SevenDaysToDie, GamesEnum.Scum],
+  profileRoute: '/turbo_tron'
 };
 
 export const Sol: ProfileInterface = {
@@ -25,5 +27,6 @@ export const Sol: ProfileInterface = {
   mixerUrl: 'https://mixer.com/ND_Sol',
   imageUrl: '/assets/sol.png',
   displayName: 'Sol',
-  games: [GamesEnum.Fortnite, GamesEnum.Scum]
+  games: [GamesEnum.Fortnite, GamesEnum.Scum],
+  profileRoute: '/sol'
 };

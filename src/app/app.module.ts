@@ -12,6 +12,7 @@ import { SkinnyProfilesComponent } from './skinny-profiles/skinny-profiles.compo
 import { HomeComponent } from './home/home.component';
 import {ROUTING} from './app.routing';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SkinnyProfilesComponent,
     HomeComponent,
     NotFoundComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,
