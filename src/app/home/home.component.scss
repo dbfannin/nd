@@ -12,6 +12,7 @@ app-hero {
 .comingSoonContainer {
   height: 100vh;
   margin-top: 75rem;
+  position: relative;
   .comingSoonInnerContainer {
     @include centerVertically;
     width: 100%;
