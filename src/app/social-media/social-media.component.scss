@@ -1,0 +1,23 @@
+//:host {
+//  display: block;
+//  position: relative;
+//}
+
+.socialMediaContainer {
+  //bottom: 0;
+  //position: absolute;
+  //width: 100%;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem 1rem;
+  font-size: 3rem;
+  color: darken(white, 20%);
+  &:hover, &:active, &:focus {
+  color: darken(white, 10%);
+  }
+}

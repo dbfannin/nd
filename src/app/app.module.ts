@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import {ROUTING} from './app.routing';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NavComponent } from './nav/nav.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { NavComponent } from './nav/nav.component';
     HomeComponent,
     NotFoundComponent,
     NavComponent,
+    SocialMediaComponent,
   ],
   imports: [
     BrowserModule,
