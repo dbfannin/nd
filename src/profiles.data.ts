@@ -22,8 +22,8 @@ export const TurboTron: ProfileInterface = {
 };
 
 export const Sol: ProfileInterface = {
-  twitchUserName: 'tl_sol',
-  twitchUrl: 'https://www.twitch.tv/tl_sol',
+  twitchUserName: 'nd_sol',
+  twitchUrl: 'https://www.twitch.tv/nd_sol',
   mixerUrl: 'https://mixer.com/ND_Sol',
   imageUrl: '/assets/sol.png',
   displayName: 'Sol',
