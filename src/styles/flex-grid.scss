@@ -1,0 +1,99 @@
+$numberOfColumns: 12;
+
+//100 / 12 gives us roughly 8.3333 which we have to again divide by 100 so that $singleColumnWidth isn't 833.33%
+$singleColumnWidth: percentage(100 / $numberOfColumns / 100);
+
+@mixin flexDisplay {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flexRow {
+  @include flexDisplay;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin-left: -.75rem;
+  margin-right: -.75rem;
+}
+
+@mixin flexColumn {
+  @include flexDisplay;
+  flex-direction: column;
+
+  margin-left: -.75rem;
+  margin-right: -.75rem;
+}
+
+@mixin flexItem {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+@mixin flexAuto {
+  @include flexItem;
+  flex-grow: 99;
+  flex-shrink: 99;
+}
+
+@mixin flex1 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth;
+}
+
+@mixin flex2 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 2;
+}
+
+@mixin flex3 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 3;
+}
+
+@mixin flex4 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 4;
+}
+
+@mixin flex5 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 5;
+}
+
+@mixin flex6 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 6;
+}
+
+@mixin flex7 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 7;
+}
+
+@mixin flex8 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 8;
+}
+
+@mixin flex9 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 9;
+}
+
+@mixin flex10 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 10;
+}
+
+@mixin flex11 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 11;
+}
+
+@mixin flex12 {
+  @include flexItem;
+  flex-basis: $singleColumnWidth * 12;
+}

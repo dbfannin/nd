@@ -1,26 +1,9 @@
 <div class="container profilesContainer">
   <div class="row">
-    <div class="col-md-4 col-sm-12" *ngFor="let profile of profiles">
-      <div class="profileContainer">
-        <a [routerLink]="profile.profileRoute" class="profileImageContainer">
-          <img [src]="profile.imageUrl" class="profileImage">
-        </a>
-
-        <div class="contentContainer">
-          <a [routerLink]="profile.profileRoute" class="displayName">
-            {{profile.displayName}}
-          </a>
-
-          <div class="linkContainer">
-            <a [href]="profile.twitchUrl" target="_blank" class="twitch">
-              <i class="fab fa-twitch twitchLogo"></i> {{profile.twitchUrl}}
-            </a>
-            <a [href]="profile.mixerUrl" target="_blank">
-              <img class="mixerLogo" src="/assets/mixer.svg"/> {{profile.mixerUrl}}
-            </a>
-          </div>
-        </div>
-      </div>
+    <div class="profile" *ngFor="let profile of profiles">
+      <a [href]="profile.twitchUrl || profile.mixerUrl" class="">
+        <img [src]="profile.imageUrl" class="profileImage">
+      </a>
     </div>
   </div>
 </div>

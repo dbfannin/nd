@@ -1,16 +1,22 @@
 @import '../../styles/variables';
+@import '../../styles/flex-grid';
 
 :host {
   font-size: 1.4rem;
 }
 
 .profilesContainer {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 
-.profileContainer {
+.row {
+  @include flexRow;
+  justify-content: center;
+  .profile {
+    @include flex4;
+    max-width: 15rem;
 
+  }
 }
 .displayName {
   font-size: 2rem;
@@ -30,16 +36,18 @@
 
 .profileImage {
   max-width: 100%;
-  width: 20rem;
+  width: 10rem;
   height: auto;
   border-radius: 20rem;
   margin: 0 auto;
   display: block;
   user-select: none;
 
-  opacity: .92;
-  transition: opacity .5s;
+  opacity: .80;
+  box-shadow: 0 0 10px 5px #111;
+  transition: box-shadow .5s, opacity .5s;
   &:hover {
+    box-shadow: 0 0 10px 5px #222;
     opacity: 1;
   }
 }
