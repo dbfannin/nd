@@ -1,0 +1,85 @@
+$screen-xxs-max: 299px;
+
+$screen-xs-min: $screen-xxs-max + 1;
+$screen-xs-max: 479px;
+
+$screen-sm-min: $screen-xs-max + 1;
+$screen-sm-max: 767px;
+
+$screen-md-min: $screen-sm-max + 1;
+$screen-md-max: 991px;
+
+$screen-lg-min: $screen-md-max + 1;
+
+// XXS View
+@mixin xxsView {
+  @media (max-width: $screen-xxs-max) {
+    @content;
+  }
+}
+
+// XS View
+@mixin xsView {
+  @media (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
+@mixin xsViewMin {
+  @media (min-width: $screen-xs-min) {
+    @content;
+  }
+}
+
+@mixin xsViewExclusive {
+  @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
+
+// Sm View
+@mixin smView {
+  @media (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+@mixin smViewMin {
+  @media (min-width: $screen-sm-min) {
+    @content;
+  }
+}
+
+@mixin smViewExclusive {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+
+
+// MD View
+@mixin mdView {
+  @media (max-width: $screen-md-max) {
+    @content;
+  }
+}
+
+@mixin mdViewMin {
+  @media (min-width: $screen-md-min) {
+    @content;
+  }
+}
+
+@mixin mdViewExclusive {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @content;
+  }
+}
+
+// LG View
+@mixin lgView {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}

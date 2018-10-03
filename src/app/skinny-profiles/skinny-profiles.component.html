@@ -1,7 +1,7 @@
-<div class="container profilesContainer">
+<div class="profilesContainer">
   <div class="row">
     <div class="profile" *ngFor="let profile of profiles">
-      <a [href]="profile.twitchUrl || profile.mixerUrl" class="">
+      <a [href]="profile.twitchUrl || profile.mixerUrl" class="" target="_blank">
         <img [src]="profile.imageUrl" class="profileImage">
       </a>
     </div>

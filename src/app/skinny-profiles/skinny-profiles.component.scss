@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/flex-grid';
+@import '../../styles/responsive';
 
 :host {
   font-size: 1.4rem;
@@ -80,4 +81,17 @@
 
 .bio {
   white-space: pre-line;
+}
+
+
+@include xsView {
+
+  .row {
+    .profile {
+      max-width: 10rem;
+    }
+  }
+  .profileImage {
+    width: 7rem;
+  }
 }
