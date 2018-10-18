@@ -1,8 +1,9 @@
 <div class="profilesContainer">
   <div class="row">
     <div class="profile" *ngFor="let profile of profiles">
-      <a [href]="profile.twitchUrl || profile.mixerUrl" class="" target="_blank">
+      <a [href]="'https://' + (profile.twitchUrl || profile.mixerUrl)" class="" target="_blank">
         <img [src]="profile.imageUrl" class="profileImage">
+        <span class="text">{{profile.twitchUrl || profile.mixerUrl}}</span>
       </a>
     </div>
   </div>
